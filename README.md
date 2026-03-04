@@ -1,105 +1,184 @@
-⚰️ Cementerio de Écija – Aplicación Android
-<p align="center"> <img src="https://img.shields.io/badge/Android-Java-3DDC84?style=for-the-badge&logo=android&logoColor=white"> <img src="https://img.shields.io/badge/IDE-Android%20Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white"> <img src="https://img.shields.io/badge/Platform-Android-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"> </p> <p align="center"> 📱 Aplicación móvil desarrollada en <b>Java</b> que adapta una página web del Cementerio de Écija a una experiencia optimizada para dispositivos Android. </p>
-📖 Descripción del Proyecto
+# ⚰️ Cementerio de Écija – Aplicación Android
 
-Esta aplicación permite consultar información de personas fallecidas en el Cementerio de Écija de forma rápida y sencilla desde un dispositivo móvil.
+<div align="center">
 
-El usuario puede introducir:
+[![Android](https://img.shields.io/badge/Android-Java-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://www.android.com/)
+[![IDE](https://img.shields.io/badge/IDE-Android%20Studio-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/studio)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-📝 Nombre completo del fallecido
+*Una aplicación móvil para consultar información de fallecidos en el Cementerio de Écija*
 
-📅 Fecha (opcional)
+[Características](#-características-principales) • [Instalación](#-instalación-y-uso) • [Estructura](#-estructura-del-proyecto) • [Licencia](#-licencia)
 
-Y la aplicación mostrará información como:
+</div>
 
-🪦 Número de lápida
+---
 
-📍 Ubicación
+## 📖 Descripción del Proyecto
 
-📄 Datos asociados disponibles
+Esta aplicación permite consultar información de personas fallecidas en el Cementerio de Écija de forma **rápida y sencilla** desde un dispositivo móvil Android.
 
-El objetivo principal es mejorar la accesibilidad y la experiencia de usuario respecto a la versión web original.
+**¿Qué puedes hacer?**
+- 📝 Buscar por nombre completo del fallecido
+- 📅 Filtrar opcionalmente por fecha
+- 🪦 Obtener número de lápida
+- 📍 Conocer ubicación exacta
+- 📄 Acceder a datos asociados
 
-✨ Características Principales
+El objetivo principal es **mejorar la accesibilidad** y la experiencia de usuario respecto a la versión web original.
 
-🔎 Búsqueda por nombre completo
+---
 
-📅 Filtro opcional por fecha
+## ✨ Características Principales
 
-⚡ Resultados rápidos y claros
+- 🔎 **Búsqueda por nombre completo** – Encuentra rápidamente a la persona que buscas
+- 📅 **Filtro opcional por fecha** – Refina resultados si lo necesitas
+- ⚡ **Resultados rápidos y claros** – Información instantánea
+- 🎨 **Interfaz intuitiva** – Diseño sencillo y fácil de usar
+- 📱 **Optimizado para móvil** – Experiencia adaptada a dispositivos pequeños
+- 🌙 **Compatible con múltiples versiones** – Funciona en diferentes dispositivos
 
-🎨 Interfaz sencilla e intuitiva
+---
 
-📱 Adaptación completa a entorno móvil
+## 🛠️ Tecnologías Utilizadas
 
-🛠️ Tecnologías Utilizadas
+| Tecnología | Descripción |
+|-----------|-------------|
+| ☕ **Java** | Lenguaje de programación principal |
+| 🤖 **Android SDK** | Kit de desarrollo para Android |
+| 🧩 **Android Studio** | Entorno de desarrollo integrado |
+| 🌐 **API Web** | Datos adaptados desde plataforma web |
 
-☕ Java
+---
 
-🤖 Android SDK
+## 🚀 Instalación y Uso
 
-🧩 Android Studio
+### Requisitos previos
+- Android Studio instalado
+- JDK 8 o superior
+- Git configurado en tu sistema
 
-🌐 Adaptación de datos desde plataforma web
+### Pasos de instalación
 
-🚀 Instalación y Uso
-1️⃣ Clonar el repositorio
-git clone https://github.com/tuusuario/tu-repositorio.git
-2️⃣ Abrir en Android Studio
+**1️⃣ Clonar el repositorio**
+```bash
+git clone https://github.com/areyort4827/Cementerio-ecija.git
+cd Cementerio-ecija
+```
 
-Abrir el proyecto desde Android Studio.
+**2️⃣ Abrir en Android Studio**
+- Abre Android Studio
+- Selecciona `File → Open` y navega hasta la carpeta del proyecto
 
-3️⃣ Sincronizar Gradle
+**3️⃣ Sincronizar Gradle**
+- Android Studio descargará automáticamente las dependencias
+- Espera a que se complete la sincronización
 
-Esperar a que se descarguen las dependencias automáticamente.
+**4️⃣ Ejecutar la aplicación**
+- Selecciona un emulador o conecta un dispositivo físico
+- Haz clic en `Run → Run 'app'` o presiona `Shift + F10`
 
-4️⃣ Ejecutar la aplicación
+---
 
-Iniciar en emulador o dispositivo físico.
+## 🧠 Flujo de Funcionamiento
 
-🧠 Funcionamiento
+```
+1. Usuario introduce nombre completo
+   ↓
+2. Opcionalmente añade fecha
+   ↓
+3. Se realiza la consulta a la base de datos
+   ↓
+4. Se muestran resultados:
+   - Número de lápida
+   - Ubicación exacta
+   - Datos adicionales
+```
 
-El usuario introduce el nombre completo.
+---
 
-Opcionalmente añade la fecha.
+## 📂 Estructura del Proyecto
 
-Se realiza la consulta.
+```
+Cementerio-ecija/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/areyort4827/cementerioecija/
+│   │   │   │       ├── MainActivity.java
+│   │   │   │       ├── SearchActivity.java
+│   │   │   │       └── DetailActivity.java
+│   │   │   ├── res/
+│   │   │   │   ├── layout/
+│   │   │   │   ├── drawable/
+│   │   │   │   ├── values/
+│   │   │   │   └── AndroidManifest.xml
+│   │   └── test/
+│   └── build.gradle
+├── gradle/
+├── .gitignore
+├── README.md
+└── LICENSE
+```
 
-Se muestran los datos del fallecido, incluyendo el número de lápida.
+---
 
-📂 Estructura del Proyecto
-📦 app
- ┣ 📂 java
- ┃ ┗ 📂 com.tuusuario.cementerioecija
- ┣ 📂 res
- ┃ ┣ 📂 layout
- ┃ ┣ 📂 drawable
- ┃ ┗ 📂 values
- ┗ 📄 AndroidManifest.xml
-🎯 Objetivos
+## 🎯 Objetivos del Proyecto
 
-Adaptar una web informativa a una aplicación móvil.
+✅ Adaptar una web informativa a una aplicación móvil funcional
 
-Aplicar buenas prácticas en desarrollo Android con Java.
+✅ Aplicar buenas prácticas en desarrollo Android con Java
 
-Mejorar la experiencia de usuario en dispositivos móviles.
+✅ Mejorar significativamente la experiencia de usuario en dispositivos móviles
 
-🔮 Mejoras Futuras
+✅ Optimizar la accesibilidad a información del cementerio
 
-🌍 Geolocalización de la lápida
+---
 
-🌙 Implementación de modo oscuro
+## 🔮 Mejoras Futuras
 
-🔍 Filtros de búsqueda avanzados
+- [ ] 🌍 **Geolocalización en mapa** – Ubicar lápidas con GPS
+- [ ] 🌙 **Modo oscuro** – Interfaz adaptable a diferentes condiciones
+- [ ] 🔍 **Filtros avanzados** – Búsquedas más precisas
+- [ ] 📊 **Historial de búsquedas** – Guardar búsquedas recientes
+- [ ] 🔔 **Notificaciones** – Alertas de aniversarios
+- [ ] 🌐 **Multi-idioma** – Soporte para varios idiomas
 
-📊 Historial de búsquedas
+---
 
-👨‍💻 Autor
+## 🤝 Contribuciones
 
-Tu Nombre
-Écija, España
+Las contribuciones son bienvenidas. Para cambios importantes:
 
-📄 Licencia
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-Este proyecto se distribuye bajo la licencia MIT.
-Consulta el archivo LICENSE para más información.
+---
+
+## 👨‍💻 Autor
+
+**Tu Nombre**  
+📍 Écija, España  
+📧 tu.email@example.com
+
+---
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la **Licencia MIT**.
+
+Para más información, consulta el archivo [LICENSE](LICENSE).
+
+---
+
+<div align="center">
+
+⭐ Si este proyecto te fue útil, considera darle una estrella
+
+Hecho con ❤️ en Écija
+
+</div>
