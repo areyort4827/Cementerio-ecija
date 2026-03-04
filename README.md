@@ -161,9 +161,9 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 
 ## 👨‍💻 Autor
 
-**Tu Nombre**  
+Antonio Reyes Ortega
 📍 Écija, España  
-📧 tu.email@example.com
+📧 areyesortegatrabajo@gmail.com
 
 ---
 
